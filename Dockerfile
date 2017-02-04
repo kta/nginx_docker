@@ -11,7 +11,6 @@ RUN sed -i -e "s/packages\/centos/packages\/mainline\/centos/" /etc/yum.repos.d/
 RUN yum install -y  --enablerepo=nginx nginx-1.11.9
  
 
-
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD default.conf /etc/nginx/conf.d/default.conf
 
