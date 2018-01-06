@@ -24,12 +24,12 @@ sudo docker run -d -i -p 80:80 -v /vagrant/http:/var/www -t nimg:0.1
 ## 削除
 ### 実行中の全てのコンテナを削除
 ```
-sudo docker rm -f  $(sudo docker ps -a)
+sudo docker rm -f  $(sudo docker ps -a -q)
 ```
 
 ### 全てのイメージを削除
 ```
-sudo docker rmi -f $(sudo docker images)
+sudo docker rmi -f $(sudo docker images -q)
 ```
 
 
