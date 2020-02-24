@@ -32,5 +32,7 @@ sudo docker rm -f  $(sudo docker ps -a -q)
 sudo docker rmi -f $(sudo docker images -q)
 ```
 
-
-
+### 全てのdocker-networkを削除
+```
+sudo docker network rm $(docker network ls -q)
+```
