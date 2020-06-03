@@ -36,3 +36,9 @@ sudo docker rmi -f $(sudo docker images -q)
 ```
 sudo docker network rm $(docker network ls -q)
 ```
+
+
+### すべての docker volumeを削除
+```
+docker volume rm $(docker volume ls -q)
+```
